@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>responsive-site</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  </head>
+  <body><!--header-->
+  
+  
+  写真は横長のものをフリー素材から用意してください
+横幅を縮小しても、写真部分で余白が発生しないようにしてください
+横幅を拡大縮小して、アスペクト比は元画像のままにしてください
+表示崩れがおきないようにしてください
+横幅が768px以下をモバイル表示、769px以上をPC表示としてください
+特に指定のない部分は自ら決定してください
+GitHubでリポジトリ responsive-site を作成し、プッシュしてください
+写真
+横幅の伸縮に合わせて100％表示
+高さ500ｐｘ
+
+<section id="skills">
+        <!-- 追加  -->
+        <h2 class="text-center">テキスト</h2>
+        <div class="container">
+        </div>
+    </section>
+    
+    style.css
+section
+{
+    padding: 60px 0; /* section要素の余白を上下60pxで揃える */
+}
+section .container
+{
+    width: 90%; /* sectionの中のインナーボックスをウィンドウ幅に対して90%に */
+}
+section h2
+{
+    font-size: 3.2rem;/* section要素見出しを32pxで揃える */
+}
+
+.block-center,
+section .container
+{
+    display: block;
+margin-right: auto;
+    margin-left: auto;
+}
+.abel,
+section h2
+{
+    font-family: 'Abel', sans-serif;
+}
+.uppercase,
+section h2
+{
+    text-transform: uppercase;
+}
+
+#skills
+{
+    background-color: #bea300;
+}
+#skills .container
+{
+    display: -webkit-flex;
+    display:         flex;
+justify-content: space-between;
+}
+#skills h2
+{
+    margin-bottom: 60px;
+    color: #fdfcf6;
+}
+
+
+
+テキスト
+
+タイトル
+
+テキスト
+＊3
+横幅は伸縮に合わせて表示
+高さはテキストが隠れないように表示
+
+
+     <section id="skills">
+        <h2 class="text-center">Skills</h2>
+        <div class="container">
+            <div class="skill-box">
+                <i aria-hidden="true" class="skill-icon fa fa-laptop"></i>
+                <h3 class="text-center">Web</h3>
+                <p>HTML/CSSでのコーディングができます。JavaScript、PHP、WordPressも現在勉強中です。</p>
+            </div>
+<!-- 追加  -->
+            <div class="skill-box">
+                <i aria-hidden="true" class="skill-icon fa fa-pencil"></i>
+                <h3 class="text-center">Illust</h3>
+                <p>キャラクターデザインなどのイラスト制作が得意です。専門学校在籍のときにXXの特別賞を受賞しました。</p>
+            </div>
+            <div class="skill-box">
+                <i aria-hidden="true" class="skill-icon fa fa-commenting-o"></i>
+                <h3 class="text-center">English</h3>
+                <p>16歳になるまでずっとアメリカにいたので英語が得意です。Webデザインも海外の記事を読んで勉強しています。</p>
+            </div>
+            
+            #skills .skill-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    margin: 0px 10px;
+    padding: 20px;
+-webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: #fdfcf6;
+}
+
+#skills i
+{
+    font-size: 4.5rem;
+-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+text-align: center;
+color: #fff;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #14c0c9;
+}
+#skills h3
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+margin-bottom: 10px;
+color: #14c0c9;
+}
+.block-center,
+section .container,
+#skills i
+{
+    display: block;
+margin-right: auto;
+    margin-left: auto;
+}
+
+
+            
+        </div>
+    </section>
+
+
+
+テキスト
+ボタン
+角丸ボタンをCSSで作成
+
+モバイル
+写真
+高さを250PX
+ 
+  </body>
+</html>
+
