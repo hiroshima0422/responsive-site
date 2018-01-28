@@ -185,6 +185,10 @@ a.bt{
 
 @media (max-width: 768px) {
     
+    .box{
+    height: 250px;　　
+   
+}
    
   .container {
       
@@ -192,7 +196,8 @@ a.bt{
   }
 
     .skill-box {
-        margin: 10px 10px;                  
+        margin: 10px 10px;
+        height:250px;
     }
 }
 
