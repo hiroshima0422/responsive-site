@@ -71,7 +71,7 @@ margin-right: auto;
 
 #Flexbox
 {
-   
+    background-color:  #00AA00;
 }
 
 
@@ -90,14 +90,13 @@ margin-right: auto;
 
 #Flexbox .Flexbox-box
 {
-    margin: 10px 10px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
             /*flexプロパティは、Flexboxでレイアウトした場合に横幅を指定することができます。
             横並びのFlexboxなので、 flex: 1; とすると、.skill-boxが全て1の横幅、
             つまり全て同じ幅になるように自動調整されます。 */
-    -webkit-: 1;
+    -webkit-flex: 1;
             flex: 1;
     
 }
@@ -131,7 +130,124 @@ Flexbox(Flexible Box Layout Module) まで*/
 
 
 
+/*
+floatプロパティを使ったレイアウト方法 から*/
 
+#float
+{
+    
+    background-color:  #5BC0DE;
+}
+
+#float .float-box
+{
+    float: left;
+width: 33.33333%;
+    height: 100%;
+}
+#float::after
+{
+    display: block;
+    clear: both;
+content: '';
+}
+
+
+
+
+
+
+
+/*
+floatプロパティを使ったレイアウト方法 まで*/
+/*
+display: inline-block;を使用してレイアウト から*/
+/*
+display: inline-block;で並べた要素をvertical-align: top;で上揃えします。
+vertical-alignプロパティは縦方向の整列方法をbaseline、
+text-top、text-bottom、middle、top、bottomなどの値で指定できます（インライン要素、またはテーブルセル要素のみ）。*/
+
+/*
+display:inline-blockで要素を並べると余計な隙間ができてしまう
+親要素にfont-size:0;を指定する
+letter-spacing: -.4em; /* 文字間を詰めて隙間をなくす　もあり
+*/
+
+#inline-block
+{
+    background-color:  #FFAAAA;
+}
+
+#inline-block ul
+{
+width:100%;
+font-size:0;
+}
+
+#inline-block ul li
+{
+    
+display: inline-block;
+-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  font-size: 1.0rem;/* 文字を戻す 　　　letter-spacing: normal;  文字間を元に戻すもありｓ */           
+ width:33.3333%;   
+
+}
+
+
+/* ハックでIE6,7のみに適用 */
+.ul.global_menu li {
+    display: inline;
+    zoom: 1;
+}
+
+
+/*
+display: inline-block;を使用してレイアウト まで*/
+
+
+/*
+display:table-cell の使い方 から*/
+
+#table-cell
+{
+    background-color:  #996633;
+}
+
+#table-cell ul
+{
+width:100%;
+
+}
+
+#table-cell ul li
+{
+    
+display: inline-block;
+-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            
+ width:33.3333%;   
+
+}
+ul.global_menu {
+    display:table;
+    table-layout:fixed;
+    
+}
+ul.global_menu li {
+    display:table-cell;
+    vertical-align:middle;
+    
+    
+}
+
+
+/*
+display:table-cell の使い方 まで*/
 
 #boton
 {
@@ -184,16 +300,11 @@ a.bt{
 }
 
 @media (max-width: 768px) {
+  .box{
+    height: 250px;　　
     
-   
-  .container {
-      
-    flex-direction: column;
-  }
-
-    .skill-box {
-        margin: 10px 10px;                  
     }
+    
 }
 
 
